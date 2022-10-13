@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>Document</title>
+    <meta name="description" content="Página Web de Blog de Café"
+    
+    <!--PREFEFCH-->
+    <link rel="prefetch" href="courses.html" as="document" >
+    <!--PRELOAD-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Roboto+Flex:wght@400;500;600&display=swap" crossorigin="crossorigin" as=font> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Roboto+Flex:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+        <div clas="container">
+            <div class="bar">
+                <a class="logo"  href="index.html">
+                    <h1 class="logo__name no-margin center-text">Coffee<span class="logo__bold">Blog</span></h1>
+                </a><!--logo-->
+
+                <nav class="nav">
+                    <a href="aboutUs.html" class="nav__link">About Us</a>
+                    <a href="courses.html" class="nav__link">Courses</a>
+                    <a href="contact.html" class="nav__link">Conctact</a>
+                </nav> <!--nav-->
+            </div><!--bar-->
+        </div>
+
+        <div class="header__text">
+            <h2 class="no-margin">Coffee blog with tips and courses</h2>
+            <p class="no-margin">Learn from the experts with the best recipes and tips</p>
+        </div><!--header__text-->
+
+    </header><!--header-->
+
+        <div class="container  main-content">
+            <main class="blog">
+                <h2>Our Blog</h2>
+
+                <article class="entry">
+                    <div class="entry__img">
+                        <picture>
+                            <source loading="lazy">
+                            <img loading="lazy" src="img/blogg1.jpg" alt="Imagen Blog">
+                        </picture>
+                    </div>
+
+                    <div class="entry__content">
+                        <h4 class="no-margin">Types of Coffee Beans</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae labore, quasi porro odio, sunt dolores perspiciatis atque ipsa, temporibus hic aliquid nisi rerum enim commodi est voluptates fugit inventore!</p>
+                        <a href="firstArticle.html" class="button  button--primary">Read Article</a>
+                    </div><!--entry__content-->
+                </article>
+            </article>
+
+                <article class="entry">
+                    <div class="entry__img">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog2.jpg" alt="Imagen Blog">
+                        </picture>
+                    </div>
+
+                    <div class="entry__content">
+                        <h4 class="no-margin">3 Delicious Coffee Recipes</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae labore, quasi porro odio, sunt dolores perspiciatis atque ipsa, temporibus hic aliquid nisi rerum enim commodi est voluptates fugit inventore!</p>
+                        <a href="secondArticle.html" class="button  button--primary">Read Article</a>
+                    </div><!--entry__content-->
+                </article>
+
+                <article class="entry">
+                    <div class="entry__img">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog3.jpg" alt="Imagen Blog">
+                        </picture>
+                    </div>
+
+                    <div class="entry__content" class="block-btn-grey">
+                        <h4 class="no-margin">Benefits of Coffee</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vitae labore, quasi porro odio, sunt dolores perspiciatis atque ipsa, temporibus hic aliquid nisi rerum enim commodi est voluptates fugit inventore!</p>
+                        <a href="thirdArticle.html" class="button  button--primary">Read Article</a>
+                    </div><!--entry__content-->
+
+                   
+
+            </main>
+                <aside class="sidebar">
+                    <h2>Our Courses and Workshops</h2>
+
+                    <ul class="courses no-padding">
+                        <li class="widget-course">
+                            <h4 class="no-margin" >Workshop - Coffee Brewing Technique</h4>
+                            <p class="widget-course__label">Price:
+                                <span class="widget-course__info">Free</span>
+                            </p>
+                            
+                            <p class="widget-course__label">Quota:
+                                <span class="widget-course__info">20</span>
+                            </p>
+                            <a href="courses.html" id="1" class="button  button--secondary">Information</a>
+                        </li>
+
+                        <li class="widget-course">
+                            <h4 class="no-margin">Coffee Recipes for Beginners</h4>
+                            <p class="widget-course__label">Price:
+                                <span class="widget-course__info">Free</span>
+                            </p>
+                            
+                            <p class="widget-course__label">Quota:
+                                <span class="widget-course__info">20</span>
+                            </p>
+                            <a href="courses.html" id="2" class="button  button--secondary">Information</a>
+                        </li>
+
+                        <li class="widget-course">
+                            <h4 class="no-margin">Workshop - Workshop for Roasting and Grinding grains</h4>
+                            <p class="widget-course__label">Price:
+                                <span class="widget-course__info">Free</span>
+                            </p>
+                            
+                            <p class="widget-course__label">Quota:
+                                <span class="widget-course__info">20</span>
+                            </p>
+                            <a href="courses.html" class="button  button--secondary">Information</a>
+                        </li>
+
+                        <li class="widget-course">
+                            <h4 class="no-margin">
+                                Become Great with Coffee | From Beginner to Barista</h4>
+                            <p class="widget-course__label">Price:
+                                <span class="widget-course__info">Free</span>
+                            </p>
+                            
+                            <p class="widget-course__label">Quota:
+                                <span class="widget-course__info">20</span>
+                            </p>
+                            <a href="courses.html" class="button  button--secondary">Information</a>
+                        </li>
+
+                        <li class="widget-course">
+                            <h4 class="no-margin">From Coffee Plant to Your Coffee Cup</h4>
+                            <p class="widget-course__label">Price:
+                                <span class="widget-course__info">Free</span>
+                            </p>
+                            
+                            <p class="widget-course__label">Quota:
+                                <span class="widget-course__info">20</span>
+                            </p>
+                            <a href="courses.html" class="button  button--secondary">Information</a>
+                        </li>
+
+                        <li class="widget-course">
+                            <h4 class="no-margin">Workshop - Coffee Brewing Technique</h4>
+                            <p class="widget-course__label">Price:
+                                <span class="widget-course__info">Free</span>
+                            </p>
+                            
+                            <p class="widget-course__label">Quota:
+                                <span class="widget-course__info">20</span>
+                            </p>
+                            <a href="courses.html" class="button  button--secondary">Information</a>
+                        </li>
+                    </ul>
+                </aside>
+        </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Laura Patricia Cruz | Front End Developer</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="js/modernizr.js"></script> 
+</body>
+</html>
