@@ -193,8 +193,9 @@ img {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
+    margin-top:2rem;
     margin-bottom: 2rem;
-    border:1.5px solid var(--azul);
+    border:1.5px solid var(--grisOscuro);
 }
 
 @media (min-width: 768px){
