@@ -76,7 +76,7 @@ p {
 
 img {
     max-width: 100%;
-    border-radius: 7px;
+    border-radius: 1%;
 }
 
 /*Utilities */
@@ -318,6 +318,13 @@ img {
 }
 
 /*Contact*/
+.error{
+    background-color: red;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
 
 .contact-bg {
     background-image: url(../img/contacto.jpg);
@@ -389,7 +396,7 @@ img {
 }
 
 .img__blog{
-    border-radius: 10%;
+    border-radius: 1%;
     width: 500px;
     margin-bottom: 3rem;
 }
