@@ -20,7 +20,7 @@ form.addEventListener('submit', function(e){
     //Validar Formulario
     // const {name, email, message}= data;
     
-    if (name==='' || email==='' || message===''){        // si name, email o message están vacios...
+    if (name.value==='' || email.value==='' || message.value===''){        // si name, email o message están vacios...
         showAlert('All fields are required', 'true');       // ERROR: All fields are required.
         return;                                      //Corta la ejecución del código
     } 
@@ -43,20 +43,22 @@ function readText(e){
 
 
 function showAlert(message, error = null){
-    const alert = document.createElement('P');
-    alert.textContent=message;
+    if (!document.querySelector('.error') && !document.querySelector('.correct')) {
+    
+        const alert = document.createElement('P');
+        alert.textContent=message;
 
-    if(error){
-        alert.classList.add('error');
-    } else {
-        alert.classList.add('correct');
-    }      
+        if(error){
+            alert.classList.add('error');
+        } else {
+            alert.classList.add('correct');
+        }      
 
-    form.appendChild(alert);
+        form.appendChild(alert);
 
-    setTimeout(()=>{
-        alert.remove();
-    },5000);
+        setTimeout(()=>{
+            alert.remove();
+        },5000);
+    }
+
 }
-
-
