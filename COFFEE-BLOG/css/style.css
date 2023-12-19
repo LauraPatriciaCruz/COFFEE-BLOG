@@ -254,6 +254,8 @@ img {
 
 .header__aboutUs{
     background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position-y: center ;
     height:60rem;
 }
